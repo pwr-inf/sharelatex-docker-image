@@ -1,0 +1,38 @@
+mongo:
+ image: mongo:2.6
+ restart: always
+
+redis:
+ image: redis:2.6.17
+ restart: always
+
+mysql:
+ image: mysql:5.7.15
+ environment:
+   - MYSQL_USER="clsi"
+   - MYSQL_ROOT_PASSWORD="clsi"
+   - MYSQL_PASSWORD="clsi"
+   - MYSQL_DATABASE="clsi"
+ restart: always
+
+sharelatex:
+ build: .
+ ports:
+  - "20080:80"
+ links:
+  - mongo
+  - redis
+  - mysql
+       
+ environment:
+  - SHARELATEX_SITE_URL=http://iron.engine.kdm.wcss.pl:20080
+  - SHARELATEX_OAUTH_ENABLED=true
+  - SHARELATEX_OAUTH_CLIENT=sharelatex_cloned
+  - SHARELATEX_OAUTH_SECRET=secret
+  - SHARELATEX_OAUTH_BASE_URL=https://sso.datasciencegroup.pl/
+  - SHARELATEX_OAUTH_SCOPE=openid
+  - SHARELATEX_MONGO_URL=mongodb://mongo:27017/sharelatex
+  - SHARELATEX_REDIS_HOST=redis
+ restart: always
+
+

@@ -69,6 +69,7 @@ RUN cd /var/www && node git-revision > revisions.txt
 	
 # Minify js assets
 RUN cd /var/www/sharelatex/web; \
+        npm install simple-oauth2@0.6.0; \
 	grunt compile:minify;
 
 RUN cd /var/www/sharelatex/clsi; \

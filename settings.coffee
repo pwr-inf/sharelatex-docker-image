@@ -22,6 +22,13 @@ TMP_DIR = '/var/lib/sharelatex/tmp'
 
 settings =
 
+	oauth:
+		is_enabled: process.env["SHARELATEX_OAUTH_ENABLED"] or false
+		client_id:  process.env["SHARELATEX_OAUTH_CLIENT"] or 'sharelatex'
+		client_secret:  process.env["SHARELATEX_OAUTH_SECRET"] or 'secret'
+		base_url:  process.env["SHARELATEX_OAUTH_BASE_URL"] or 'http://localhost:8080'
+		scope:  process.env["SHARELATEX_OAUTH_SCOPE"] or 'openid'
+
 	# Databases
 	# ---------
 

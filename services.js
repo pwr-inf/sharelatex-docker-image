@@ -2,12 +2,13 @@ module.exports =
 
 [{
 	name: "web",
-	repo: "https://github.com/sharelatex/web-sharelatex.git",
+//	repo: "https://github.com/sharelatex/web-sharelatex.git",
+	repo: "https://github.com/pwr-inf/web-sharelatex.git",	
 	version: "master"
 }, {
 	name: "real-time",
 	repo: "https://github.com/sharelatex/real-time-sharelatex.git",
-	version: "master"
+	version: "ed0b211"
 }, {
 	name: "document-updater",
 	repo: "https://github.com/sharelatex/document-updater-sharelatex.git",
@@ -15,37 +16,37 @@ module.exports =
 }, {
 	name: "clsi",
 	repo: "https://github.com/sharelatex/clsi-sharelatex.git",
-	version: "master"
+	version: "61089ec"
 }, {
 	name: "filestore",
 	repo: "https://github.com/sharelatex/filestore-sharelatex.git",
-	version: "master"
+	version: "14f5ee8"
 }, {
 	name: "track-changes",
 	repo: "https://github.com/sharelatex/track-changes-sharelatex.git",
-	version: "master"
+	version: "d283831"
 }, {
 	name: "docstore",
 	repo: "https://github.com/sharelatex/docstore-sharelatex.git",
-	version: "master"
+	version: "8184c12"
 }, {
 	name: "chat",
 	repo: "https://github.com/sharelatex/chat-sharelatex.git",
-	version: "master"
+	version: "176a1d4"
 }, {
 	name: "tags",
 	repo: "https://github.com/sharelatex/tags-sharelatex.git",
-	version: "master"
+	version: "d03050f"
 }, {
 	name: "spelling",
 	repo: "https://github.com/sharelatex/spelling-sharelatex.git",
-	version: "master"
+	version: "9a180ab"
 }, {
 	name: "contacts",
 	repo: "https://github.com/sharelatex/contacts-sharelatex.git",
-	version: "master"
+	version: "d3d06f3"
 }, {
         name: "notifications",
         repo: "https://github.com/sharelatex/notifications-sharelatex.git",
-        version: "master"
+        version: "3ea03c8"
 }]
